@@ -7,8 +7,18 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    background: linear-gradient(to right, #420000, #aa0202);
 }
+
+
+
+/*Header*/
+header {
+    font-family: 'Big Shoulders Inline Text', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
 
 
 
@@ -18,14 +28,15 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
+    margin-top: 70px;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
 .calculator-grid > button {
+    font-family: 'Noto Sans KR', sans-serif;
     cursor: pointer;
-    font-size: 2ren;
+    font-size: 20px;
     border: 1px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, .75);
@@ -41,7 +52,7 @@ body {
 
 .output {
     grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: rgba(22, 22, 22, 0.75);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -59,4 +70,8 @@ body {
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
+}
+
+footer {
+    height: 50px;
 }
